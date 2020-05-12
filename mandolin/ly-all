@@ -1,0 +1,6 @@
+
+docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond lilypond mandolin-chords_all.ly
+docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond lilypond mandolin-chords_all_with-staff.ly
+
+docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond lilypond mandolin-chords_major-minor.ly
+docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond lilypond mandolin-chords_major-minor_with-staff.ly
