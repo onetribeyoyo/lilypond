@@ -1,4 +1,4 @@
-# Lilypond Music Engraving Songs and Snippets #
+# Lilypond Music Engraving : Songs and Snippets #
 
 <http://lilypond.org/>
 
