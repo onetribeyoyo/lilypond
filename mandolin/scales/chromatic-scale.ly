@@ -4,16 +4,17 @@
 }
 
 words = \lyricmode {
-    g g\# a a\# b c c\# d d\# e f f\#
-    g g\# a a\# b c c\# d d\# e f f\#
-    g g\# a a\#
+    g - a - b c - d - e f -
+    g - a - b c - d - e f -
+    g - a -
 }
 
 music = {
   \time 4/4
   \language english
   { % quarter notes
-    g gs a as b c cs d ds e f fs
+    g gs a as b c cs d ds e f fs \break
+
     g gs a as b c cs d ds e f fs
     g gs a as
   }
