@@ -7,12 +7,26 @@
 music = {
   \key g \major
   \time 3/4
-  { % 1st verse....
-    r2 d4 | g2^"G 0 0 2 3" b8 (g) | b2 a4 | g2^"C 0 2 3 0" e4 | \break
+  {
+    r2 d4 |
+    g2^"G 0 0 2 3" b8 (g) |
+    b2 a4 |
+    g2^"C 0 2 3 0" e4 |
+    \break
     \set Score.currentBarNumber = #4
-    d2^"G 0 0 2 3" d4 | g2 b8 (g) | b2 a4 | d2.^"D 2 0 0 2" (| \break
-    d2) b4 | d4.^"G 0 0 2 3" (b8) d8 (b) | g2 d4 | e4.^"C 0 2 3 0" (g8) g (d) | \break
-    d2^"G 0 0 2 3" d4 | g2 b8 (g8) | b2^"D 2 0 0 2" a4 | g2.^"G 0 0 2 3" (| g2)
+    d2^"G 0 0 2 3" d4 |
+    g2 b8 (g) |
+    b2 a4 |
+    d2.^"D 2 0 0 2" (| \break
+    d2) b4 |
+    d4.^"G 0 0 2 3" (b8) d8 (b) |
+    g2 d4 |
+    e4.^"C 0 2 3 0" (g8) g (d) |
+    \break
+    d2^"G 0 0 2 3" d4 |
+    g2 b8 (g8) |
+    b2^"D 2 0 0 2" a4 |
+    g2.^"G 0 0 2 3" (| g2)
   }
   \bar "|."
 }
