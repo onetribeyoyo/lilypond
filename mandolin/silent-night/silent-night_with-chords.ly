@@ -4,12 +4,18 @@
   tagline = "" % removed
 }
 
-music = {
+intro = {
   \key g \major
   \time 3/4
-  { % 1st verse....
+  {
     g8[ b] d[ g] b[ d] | g[ d] g[ d] g[ d] | g,,[ b] d[ g] b[ d] | g[ d] g[ d] g[ d] | \break
+  }
+}
 
+melody = {
+  \key g \major
+  \time 3/4
+  {
     d[ b] g[ e'] d4 | b8^"G 0 0 2 3"[ g] d[ g] b4 | d8^"G 0 0 2 3"[ b] g[ e'] d4 | b8^"G 0 0 2 3"[ g] d[ g] b4 | \break
 
     a'8^"D 2 0 0 2"[ fis] d[ fis] a4 | fis8^"D 2 0 0 2"[ d] a[ d] fis4 | g8^"G 0 0 2 3"[ d] b[ d] g4 | d8^"G 0 0 2 3"[ b] g[ b] f'4 | \break
@@ -37,12 +43,20 @@ firstVerse = \lyricmode {
 <<
   \new Staff {
     \clef "treble"
-    \relative c' { \music }
+    \relative c' {
+      \intro
+      \break
+      \melody
+    }
     %% \addlyrics { \firstVerse }
   }
   \new TabStaff {
     \set TabStaff.stringTunings = #mandolin-tuning
-    \relative c' { \music }
+    \relative c' {
+      \intro
+      \break 
+      \melody
+    }
   }
 >>
 
